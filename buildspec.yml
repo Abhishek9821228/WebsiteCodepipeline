@@ -1,0 +1,8 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo "Building the application..."
+      - # Add your build commands here.
+      - exit 0  # Exit with success status (no errors).
