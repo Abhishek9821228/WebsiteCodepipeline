@@ -16,6 +16,5 @@ phases:
 
 artifacts:
   files: 
-    - appspec.yml
-    - website-artifact.zip
+    - /**/*
     
