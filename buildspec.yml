@@ -15,5 +15,7 @@ phases:
       - zip -r website-artifact.zip .
 
 artifacts:
-  files: website-artifact.zip
+  files: 
+    - appspec.yml
+    - website-artifact.zip
     
