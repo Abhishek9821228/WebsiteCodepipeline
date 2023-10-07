@@ -1,8 +1,16 @@
 version: 0.2
 
 phases:
-  build:
+  install:
     commands:
       - echo "Building the application..."
-      - # Add your build commands here.
-      - exit 0  # Exit with success status (no errors).
+      - sudo apt-get update
+      - sudo apt-get install nginx -y
+  build: 
+    commands:
+      - echo build started
+      - cp index.html /var/www/html/
+
+artifacts:
+  files:
+    
