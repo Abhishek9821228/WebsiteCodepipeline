@@ -10,7 +10,10 @@ phases:
     commands:
       - echo build started
       - cp index.html /var/www/html/
+  post_build:
+    commands:
+      - zip -r website-artifact.zip .
 
 artifacts:
-  files:
+  files: website-artifact.zip
     
